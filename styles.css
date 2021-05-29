@@ -484,3 +484,38 @@ small i {
 .container_column_activite a:first-of-type {
   margin-bottom: 60px;
 }
+
+/* Footer */
+
+footer {
+  padding-top: 90px;
+}
+
+.container_all_footer {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.content_footer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 335px;
+  width: 360px;
+}
+
+.content_footer a {
+  color: black;
+  font-size: 16px;
+}
+
+.content_footer h3 {
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content_footer li {
+  margin-bottom: 20px;
+}
