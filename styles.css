@@ -421,3 +421,66 @@ small i {
 .prix_populaire {
   font-weight: 600;
 }
+
+/* Section activités a Marseille */
+
+#bloc_activite {
+  padding-top: 60px;
+}
+
+.container_activite {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.container_column_activite {
+  display: flex;
+  flex-direction: column;
+}
+
+.img_activite img {
+  width: 405px;
+  height: 506px;
+}
+
+.img_activite1 img {
+  width: 405px;
+  height: 184px;
+}
+
+.img_activite2 img {
+  width: 405px;
+  height: 214px;
+}
+
+.img_activite3 img {
+  width: 405px;
+  height: 153px;
+}
+
+.content_activite img {
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.content_activite {
+  border-radius: 15px;
+  box-shadow: 0 0 16px #0000002e;
+  margin-left: 65px;
+}
+
+#content_activite_margin0 {
+  margin-left: 0;
+}
+
+.text_activite {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.container_column_activite a:first-of-type {
+  margin-bottom: 60px;
+}
