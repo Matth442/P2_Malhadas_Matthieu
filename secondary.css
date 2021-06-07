@@ -1,0 +1,140 @@
+html {
+  font-size: 62.5%;
+} /* Utilisation du rem comme unité de mesure : 1rem=10 px, 1.8rem=18px etc... */
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#container_logo_reservia {
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+
+#nav_ancres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+#inscription_boutton {
+  padding-right: 3rem;
+  padding-top: 1.5rem;
+  color: #0065fc;
+  font-weight: bold;
+}
+
+#nav_ancres ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 66%;
+  height: 100%;
+}
+
+#nav_ancres li {
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#nav_ancres a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 4.5rem;
+}
+
+#nav_ancres a:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  padding-top: 4.2rem;
+}
+
+#nav_ancres a:focus {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  padding-top: 4.2rem;
+}
+
+@media all and (max-width: 800px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 2rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #container_logo_reservia {
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  #inscription_boutton {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    padding-right: 1.5rem;
+  }
+
+  #nav_ancres {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 2.2rem;
+  }
+
+  #nav_ancres ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  #nav_ancres a {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  #nav_ancres a:hover {
+    border-top: none;
+    border-bottom: 0.3rem solid #0065fc;
+    padding-top: 2rem;
+  }
+
+  #nav_ancres a:focus {
+    border-top: none;
+    border-bottom: 0.3rem solid #0065fc;
+    padding-top: 2rem;
+  }
+}
