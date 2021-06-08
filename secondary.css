@@ -4,6 +4,8 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
+  width: 100vw;
+  max-width: 100%;
   font-size: 1.6rem;
   box-sizing: border-box;
   margin-top: 0;
@@ -19,8 +21,7 @@ ul {
 }
 
 header {
-  width: 100vw;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,6 +30,11 @@ header {
 #container_logo_reservia {
   padding-top: 3rem;
   padding-left: 3rem;
+}
+
+#img_logo_reservia {
+  width: 100px;
+  height: 50px;
 }
 
 #nav_ancres {
