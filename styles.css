@@ -559,10 +559,10 @@ footer {
   }
 
   /*#inscription {
-    position: relative;
-    right: 0px;
-    bottom: 100px;
-  }*/
+      position: relative;
+      right: 0px;
+      bottom: 100px;
+    }*/
 
   #ancres {
     display: flex;
