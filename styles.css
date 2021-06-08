@@ -1,5 +1,9 @@
 body {
   font-family: "Raleway", sans-serif;
+  width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 ul {
@@ -7,9 +11,10 @@ ul {
 }
 
 .bloc_page {
-  padding-left: 40px;
-  padding-right: 20px;
   margin-top: 35px;
+  max-width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 h1,
@@ -26,12 +31,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px 20px 10px 20px;
+  max-width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 #logo {
   padding-top: 30px;
-  padding-left: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -48,45 +54,44 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 35%;
-}
-
-nav {
   font-size: 18px;
 }
 
-nav a {
+#ancres a {
   margin-right: 25px;
   color: black;
 }
 
-nav ul {
+#ancres ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 63%;
+  height: 100%;
   padding-right: 2%;
 }
 
-nav li {
+#ancres li {
   width: 50%;
+  height: 100%;
   text-align: center;
 }
 
-nav a:hover {
+#ancres a:hover {
   color: #0065fc;
   border-top: 3px solid #0065fc;
-  padding-top: 43px;
+  padding-top: 35px;
 }
 
-nav a:focus {
+#ancres a:focus {
   color: #0065fc;
   border-top: 3px solid #0065fc;
   padding-top: 43px;
 }
 
 #inscription {
-  margin-right: 7%;
+  padding-right: 7%;
   margin-top: 16px;
   display: flex;
   flex-direction: row;
@@ -357,7 +362,6 @@ small i {
   flex-direction: column;
   padding: 30px 40px 0 45px;
   margin-left: 50px;
-  margin-right: 10px;
   width: 26%;
 }
 
@@ -494,6 +498,7 @@ small i {
 
 footer {
   padding-top: 90px;
+  width: 100%;
 }
 
 .container_all_footer {
@@ -516,7 +521,7 @@ footer {
 }
 
 .content_footer h3 {
-  padding-left: 40px;
+  padding-left: 41px;
   font-weight: bold;
   font-size: 20px;
 }
@@ -527,48 +532,117 @@ footer {
 
 /* CSS POUR MOBILE */
 
-@media screen and (max-width: 767px) {
+@media all and (max-width: 700px) {
   body {
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
   }
 
   header {
     margin: 0;
+    padding: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   #logo {
     padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 10px;
-    left: 8%;
+    margin-top: 20px;
   }
 
-  #inscription {
-    position: absolute;
-    left: 72%;
-    top: 25px;
-    padding: 0;
-    margin: 0;
+  #logo img {
+    margin-left: 30px;
+    width: 200px;
+    height: 100px;
   }
+
+  /*#inscription {
+      position: relative;
+      right: 0px;
+      bottom: 100px;
+    }*/
 
   #ancres {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    padding: 65px 0 0 0;
-    margin: 0;
+    font-size: 28px;
   }
 
   #ancres ul {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    padding: 0;
+  }
+
+  #ancres li {
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: center;
   }
 
   #ancres a:hover {
+    border-top: none;
     border-bottom: 2px solid #0065fc;
+    padding-top: 37px;
+  }
+
+  .bloc_page {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bloc_recherche_filtre {
+    padding: 8% 1% 0 8%;
+  }
+
+  .button_search {
+    display: none;
+  }
+
+  .container_filtres ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .container_hebergement_et_populaire {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hebergement_marseille {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bloc_populaire {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container_activite {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container_all_footer {
+    flex-direction: column;
   }
 }
