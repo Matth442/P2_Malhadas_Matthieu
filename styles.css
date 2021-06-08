@@ -2,12 +2,87 @@ body {
   font-family: "Raleway", sans-serif;
   width: 100vw;
   max-width: 100%;
+  font-size: 16px;
   box-sizing: border-box;
-  margin: 0;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#container_logo_reservia {
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+#img_logo_reservia {
+  width: 100px;
+  height: 50px;
+}
+
+#nav_ancres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#inscription_boutton {
+  padding-right: 40px;
+  padding-top: 9px;
+  color: #0065fc;
+  font-weight: bold;
+}
+
+#nav_ancres ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 66%;
+  height: 100%;
+}
+
+#nav_ancres li {
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#nav_ancres a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 45px;
+}
+
+#nav_ancres a:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  padding-top: 42px;
+}
+
+#nav_ancres a:focus {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  padding-top: 42px;
 }
 
 .bloc_page {
@@ -16,6 +91,20 @@ ul {
   padding-left: 40px;
   padding-right: 40px;
 }
+
+/*body {
+  font-family: "Raleway", sans-serif;
+  width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
 
 h1,
 h2 {
@@ -97,7 +186,7 @@ header {
   flex-direction: row;
   font-weight: bold;
   color: #0065fc;
-}
+}*/
 
 /* Barre de recherche*/
 
@@ -532,8 +621,62 @@ footer {
 
 /* CSS POUR MOBILE */
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 800px) {
   body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #container_logo_reservia {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  #inscription_boutton {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    padding-right: 15px;
+  }
+
+  #nav_ancres {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 22px;
+  }
+
+  #nav_ancres ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  #nav_ancres a {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  #nav_ancres a:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+    padding-top: 20px;
+  }
+
+  #nav_ancres a:focus {
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+    padding-top: 20px;
+  }
+
+  /*body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -558,11 +701,11 @@ footer {
     height: 100px;
   }
 
-  /*#inscription {
+  #inscription {
       position: relative;
       right: 0px;
       bottom: 100px;
-    }*/
+    }
 
   #ancres {
     display: flex;
@@ -588,7 +731,7 @@ footer {
     border-top: none;
     border-bottom: 2px solid #0065fc;
     padding-top: 37px;
-  }
+  }*/
 
   .bloc_page {
     margin: 0;
