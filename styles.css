@@ -669,6 +669,8 @@ footer {
     margin-right: 10px;
   }
 
+  /* Section Hébergements et Populaire */
+
   .container_hebergement_et_populaire {
     display: flex;
     flex-direction: column-reverse;
@@ -709,16 +711,69 @@ footer {
     max-width: 100%;
     padding: 0;
     margin: 0;
+    background-color: white;
+    border: none;
   }
+
+  /* Aside Populaire */
 
   .bloc_populaire {
     width: 100%;
     padding: 0;
+    padding-bottom: 30px;
     margin: 0;
+    margin-bottom: 30px;
+    border-radius: 0;
   }
 
   .bloc_populaire h2 {
     padding: 2% 8% 0 4%;
+  }
+
+  .container_all_populaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content_populaire {
+    width: 88%;
+    height: 140px;
+    padding-bottom: 7px;
+    margin-bottom: 0;
+  }
+
+  .img_populaire {
+    width: 45%;
+  }
+
+  .img_populaire img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .populaire_text {
+    width: 60%;
+    height: 100%;
+    padding: 15px 5px 0px 15px;
+  }
+
+  .populaire_text h4 {
+    position: static;
+    padding: 0;
+    margin: 0;
+  }
+
+  .populaire_text p {
+    position: relative;
+    top: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .etoiles_populaire {
+    position: relative;
+    top: 30px;
   }
 
   .container_activite {
