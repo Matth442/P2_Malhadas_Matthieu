@@ -171,7 +171,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #f2f2f2;
+  border: 2px solid rgb(226, 226, 226);
   border-radius: 38px;
   padding-right: 25px;
 }
@@ -612,11 +612,11 @@ footer {
   }
 
   #logo_recherche {
-    width: 16%;
+    width: 18%;
   }
 
   .saisie {
-    width: 80%;
+    width: 100%;
   }
 
   .button_search {
@@ -634,21 +634,39 @@ footer {
     border-radius: 18px;
   }
 
+  /* Filtres */
+
   .filtres {
     flex-direction: column;
   }
 
   .container_filtres {
-    width: 90%;
-    max-width: 100%;
-  }
-  .container_filtres ul {
+    width: 100%;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: column;
+    margin-top: 0;
   }
 
-  h2 {
-    font-size: 24px;
+  .container_filtres ul {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .container_filtres li {
+    padding-right: 0;
+    margin-right: 3%;
+    margin-bottom: 3%;
+  }
+
+  .container_filtres a {
+    font-size: 18px;
+    padding-right: 15px;
+  }
+
+  .container_filtres i {
+    margin-right: 10px;
   }
 
   .container_hebergement_et_populaire {
@@ -660,6 +678,32 @@ footer {
     margin: 0;
   }
 
+  .container_small {
+    padding-left: 4%;
+    padding-right: 0;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .container_small i {
+    width: 2%;
+    height: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_small span {
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 16px;
+  }
+
   .hebergement_marseille {
     width: 100%;
     max-width: 100%;
@@ -669,9 +713,12 @@ footer {
 
   .bloc_populaire {
     width: 100%;
-    max-width: 100%;
     padding: 0;
     margin: 0;
+  }
+
+  .bloc_populaire h2 {
+    padding: 2% 8% 0 4%;
   }
 
   .container_activite {
