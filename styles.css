@@ -793,6 +793,14 @@ footer {
     margin-bottom: 20px;
   }
 
+  .img_hebergement {
+    width: 100%;
+  }
+
+  .img_hebergement img {
+    width: 100%;
+  }
+
   .content_hebergement h4 {
     height: auto;
     margin: 0;
