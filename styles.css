@@ -892,6 +892,7 @@ footer {
   .content_footer {
     width: 100%;
     padding-left: 8%;
+    box-sizing: border-box;
   }
 
   .content_footer h3 {
