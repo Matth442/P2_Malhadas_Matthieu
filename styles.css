@@ -533,7 +533,7 @@ footer {
 
 /* CSS POUR MOBILE */
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 700px) {
   body {
     margin: 0;
     padding: 0;
@@ -844,6 +844,7 @@ footer {
   .container_column_activite {
     margin: 0;
     padding: 0;
+    width: 100%;
     align-items: center;
   }
 
@@ -905,6 +906,398 @@ footer {
     width: 100%;
     padding-left: 8%;
     box-sizing: border-box;
+  }
+
+  .content_footer h3 {
+    padding-left: 0;
+  }
+
+  .content_footer ul {
+    padding-left: 0;
+  }
+}
+
+/* CSS pour tablette */
+
+@media all and (min-width: 700px) and (max-width: 1100px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #container_logo_reservia {
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+
+  #inscription_boutton {
+    position: absolute;
+    right: 5px;
+    top: 30px;
+    padding-right: 15px;
+  }
+
+  #nav_ancres {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 18px;
+  }
+
+  #nav_ancres ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  #nav_ancres li {
+    padding: 0;
+  }
+
+  #nav_ancres a {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  #nav_ancres a:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+    padding-top: 20px;
+  }
+
+  #nav_ancres a:focus {
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+    padding-top: 20px;
+  }
+
+  .bloc_page {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bloc_recherche_filtre {
+    padding: 0 1% 0 4%;
+  }
+
+  .Titre p {
+    font-size: 17px;
+  }
+
+  #barre_recherche {
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    margin-top: 35px;
+  }
+
+  #logo_gps_recherche {
+    width: 15%;
+  }
+
+  .saisie {
+    width: 70%;
+  }
+
+  .button_search {
+    display: none;
+  }
+
+  #logo_recherche_mobile {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065fc;
+    color: white;
+    border: 1px solid #0065fc;
+    border-radius: 18px;
+  }
+
+  /* Filtres */
+
+  .filtres {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .container_filtres {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  .container_filtres ul {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .container_filtres li {
+    padding-right: 0;
+    margin-right: 3%;
+    margin-bottom: 3%;
+  }
+
+  .container_filtres a {
+    font-size: 18px;
+    padding-right: 15px;
+  }
+
+  .container_filtres i {
+    margin-right: 10px;
+  }
+
+  /* Section Hébergements et Populaire */
+
+  .container_hebergement_et_populaire {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container_small {
+    padding-left: 4%;
+    padding-right: 0;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .container_small i {
+    width: 2%;
+    height: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_small span {
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 16px;
+  }
+
+  /* Aside Populaire */
+
+  .bloc_populaire {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+    border-radius: 0;
+  }
+
+  .bloc_populaire h2 {
+    padding: 2% 8% 0 4%;
+  }
+
+  .container_all_populaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content_populaire {
+    width: 90%;
+    height: 160px;
+    padding-bottom: 7px;
+    margin-bottom: 0;
+  }
+
+  .img_populaire {
+    width: 60%;
+  }
+
+  .img_populaire img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .populaire_text {
+    width: 60%;
+    height: 100%;
+    padding: 15px 5px 0px 15px;
+  }
+
+  .populaire_text h4 {
+    position: static;
+    padding: 0;
+    margin: 0;
+  }
+
+  .populaire_text p {
+    position: relative;
+    top: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .etoiles_populaire {
+    position: relative;
+    top: 30px;
+  }
+
+  /* Hebergement Marseille */
+
+  #hebergement_marseille {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border: none;
+  }
+
+  #hebergement_marseille h2 {
+    padding-left: 5%;
+  }
+
+  .container_all_hebergement {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .content_hebergement {
+    margin: 0;
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .img_hebergement {
+    width: 100%;
+  }
+
+  .img_hebergement img {
+    width: 100%;
+  }
+
+  .content_hebergement h4 {
+    height: auto;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .content_hebergement p {
+    height: auto;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .content_hebergement span {
+    margin: 0;
+  }
+
+  #boutton_afficher {
+    margin: 0;
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+
+  /* Section Activité */
+
+  #bloc_activite h2 {
+    padding-left: 4%;
+    margin-bottom: 30px;
+  }
+
+  .container_activite {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container_column_activite {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .container_column_activite a:first-of-type {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .content_activite {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 230px;
+  }
+
+  .img_activite {
+    width: 100%;
+    height: 70%;
+  }
+
+  .img_activite1 {
+    width: 100%;
+    height: 70%;
+  }
+
+  .img_activite2 {
+    width: 100%;
+    height: 70%;
+  }
+
+  .img_activite3 {
+    width: 100%;
+    height: 70%;
+  }
+
+  .content_activite img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text_activite h3 {
+    font-size: 20px;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 0;
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .container_all_footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .content_footer {
+    width: 40%;
+    padding-left: 0;
+    box-sizing: border-box;
+    padding-left: 5%;
+    margin: 0;
   }
 
   .content_footer h3 {
